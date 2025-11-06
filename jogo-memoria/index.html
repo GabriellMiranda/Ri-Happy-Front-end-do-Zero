@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div class="start-screen" id="start-screen">
+        <h1>JOGO DA MEMÓRIA</h1>
+        <button class="start-button" id="start-button">INICIAR JOGO</button>
+    </div>
+
+    <div class="game-over-screen" id="game-over-screen" style="display: none;">
+        <h1>VITÓRIA!</h1>
+        <h2 id="final-time">Tempo: 0s</h2>
+        <h2 id="final-moves">Movimentos: 0</h2>
+        <button class="restart-button" id="restart-button">JOGAR NOVAMENTE</button>
+    </div>
+
+    <div class="conteiner" id="game-container" style="display: none;">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Tempo</h2>
+                <h2 id="time">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Movimentos</h2>
+                <h2 id="moves">0</h2>
+            </div>
+        </div>
+        <div class="panel" id="panel">
+        </div>
+    </div>
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
+
