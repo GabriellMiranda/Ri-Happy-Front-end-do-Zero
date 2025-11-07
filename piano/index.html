@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div class="start-screen" id="start-screen">
+        <h1>PIANO VIRTUAL</h1>
+        <p class="subtitle">Toque as teclas e crie sua música!</p>
+        <button class="start-button" id="start-button">INICIAR</button>
+    </div>
+
+    <div class="conteiner" id="game-container" style="display: none;">
+        <div class="menu">
+            <div class="menu-info">
+                <h2 style="color: #FFD700;">Piano Virtual</h2>
+            </div>
+            <div class="menu-controls">
+                <button class="control-button" id="show-keys-button">Mostrar Teclas</button>
+                <button class="control-button" id="volume-button">Volume: 100%</button>
+            </div>
+        </div>
+        
+        <div class="piano-container">
+            <div class="piano">
+                <div class="piano-key white-key" data-note="C" data-key="a">
+                    <span class="key-label">A</span>
+                    <span class="note-label">C</span>
+                </div>
+                <div class="piano-key black-key" data-note="C#" data-key="w">
+                    <span class="key-label">W</span>
+                    <span class="note-label">C#</span>
+                </div>
+                <div class="piano-key white-key" data-note="D" data-key="s">
+                    <span class="key-label">S</span>
+                    <span class="note-label">D</span>
+                </div>
+                <div class="piano-key black-key" data-note="D#" data-key="e">
+                    <span class="key-label">E</span>
+                    <span class="note-label">D#</span>
+                </div>
+                <div class="piano-key white-key" data-note="E" data-key="d">
+                    <span class="key-label">D</span>
+                    <span class="note-label">E</span>
+                </div>
+                <div class="piano-key white-key" data-note="F" data-key="f">
+                    <span class="key-label">F</span>
+                    <span class="note-label">F</span>
+                </div>
+                <div class="piano-key black-key" data-note="F#" data-key="t">
+                    <span class="key-label">T</span>
+                    <span class="note-label">F#</span>
+                </div>
+                <div class="piano-key white-key" data-note="G" data-key="g">
+                    <span class="key-label">G</span>
+                    <span class="note-label">G</span>
+                </div>
+                <div class="piano-key black-key" data-note="G#" data-key="y">
+                    <span class="key-label">Y</span>
+                    <span class="note-label">G#</span>
+                </div>
+                <div class="piano-key white-key" data-note="A" data-key="h">
+                    <span class="key-label">H</span>
+                    <span class="note-label">A</span>
+                </div>
+                <div class="piano-key black-key" data-note="A#" data-key="u">
+                    <span class="key-label">U</span>
+                    <span class="note-label">A#</span>
+                </div>
+                <div class="piano-key white-key" data-note="B" data-key="j">
+                    <span class="key-label">J</span>
+                    <span class="note-label">B</span>
+                </div>
+                <div class="piano-key white-key" data-note="C2" data-key="k">
+                    <span class="key-label">K</span>
+                    <span class="note-label">C</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>Use o teclado ou clique nas teclas para tocar!</p>
+            <p class="keyboard-hint">Teclas: A W S E D F T G Y H U J K</p>
+        </div>
+    </div>
+    
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
+
