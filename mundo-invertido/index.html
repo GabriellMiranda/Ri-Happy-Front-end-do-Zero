@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Invertido - Stranger Things</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Libre+Baskerville&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="main-title">STRANGER THINGS</h1>
+            <p class="subtitle">Uma jornada entre dois mundos</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="world-cards">
+            <div class="world-card" id="mundo-normal">
+                <div class="world-image">
+                    <h2 class="world-title">Mundo Normal</h2>
+                </div>
+                <div class="world-description">
+                    <h3>O Lado da Luz</h3>
+                    <p>
+                        Hawkins, Indiana. Uma pequena cidade americana dos anos 80, 
+                        onde garotos andam de bicicleta, jogam RPG e vivem aventuras normais. 
+                        Ou pelo menos era assim até...
+                    </p>
+                    <button class="btn-explore" data-world="normal">
+                        Explorar o Mundo Normal
+                    </button>
+                </div>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <div class="portal-icon">⚡</div>
+                <div class="line"></div>
+            </div>
+
+            <div class="world-card inverted" id="mundo-invertido">
+                <div class="world-image inverted-bg">
+                    <h2 class="world-title inverted-title">Mundo Invertido</h2>
+                </div>
+                <div class="world-description">
+                    <h3>O Lado das Sombras</h3>
+                    <p>
+                        O Upside Down. Uma dimensão paralela, sombria e decadente. 
+                        Um reflexo distorcido de Hawkins, habitado por criaturas aterrorizantes 
+                        e coberto por uma névoa venenosa.
+                    </p>
+                    <button class="btn-explore inverted-btn" data-world="invertido">
+                        Explorar o Mundo Invertido
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="characters-section" id="characters">
+            <h2 class="section-title">Personagens Principais</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-icon">👧</div>
+                    <h3>Eleven</h3>
+                    <p>Garota com poderes sobrenaturais que escapou de um laboratório secreto.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">🧒</div>
+                    <h3>Mike</h3>
+                    <p>Líder do grupo de amigos, determinado a proteger Eleven.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">👦</div>
+                    <h3>Dustin</h3>
+                    <p>Inteligente e carismático, sempre pronto com uma piada.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">🧑</div>
+                    <h3>Lucas</h3>
+                    <p>Cético mas leal, um verdadeiro amigo quando precisa.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">👱‍♀️</div>
+                    <h3>Max</h3>
+                    <p>Destemida skatista que se junta ao grupo.</p>
+                </div>
+                <div class="character-card">
+                    <div class="character-icon">🧔</div>
+                    <h3>Hopper</h3>
+                    <p>Chefe de polícia de Hawkins, figura paterna para Eleven.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription-section" id="subscription">
+            <div class="subscription-container">
+                <h2 class="section-title">Entre no Clube Hellfire</h2>
+                <p class="subscription-description">
+                    Receba novidades, teorias e conteúdos exclusivos sobre Stranger Things!
+                </p>
+                <form class="subscription-form" id="subscription-form">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Digite seu email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <select id="world-preference" name="world-preference" required>
+                            <option value="">Escolha seu mundo favorito</option>
+                            <option value="normal">Mundo Normal</option>
+                            <option value="invertido">Mundo Invertido</option>
+                            <option value="both">Ambos!</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        Juntar-se ao Clube
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="audio-section">
+            <h2 class="section-title">Trilha Sonora</h2>
+            <div class="audio-player">
+                <button class="audio-btn" id="theme-music">
+                    🎵 Tocar Tema de Stranger Things
+                </button>
+                <p class="audio-description">
+                    Ouça a icônica trilha sonora sintetizada que define a atmosfera da série
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Mundo Invertido - Stranger Things Fan Page</p>
+            <p class="footer-disclaimer">
+                Este site é um projeto de fãs e não tem afiliação oficial com Netflix ou Stranger Things
+            </p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Sobre</a>
+                <a href="#" class="footer-link">Contato</a>
+                <a href="#" class="footer-link">Termos</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lights-overlay"></div>
+    
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
+
