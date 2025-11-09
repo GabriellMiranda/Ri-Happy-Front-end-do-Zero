@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man | O Amigão da Vizinhança</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-red-900/50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl">🕷️</span>
+                    <h1 class="text-2xl font-bold text-red-600 spider-title">SPIDER-MAN</h1>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="nav-link hover:text-red-600 transition-colors">Início</a></li>
+                    <li><a href="#about" class="nav-link hover:text-red-600 transition-colors">Sobre</a></li>
+                    <li><a href="#powers" class="nav-link hover:text-red-600 transition-colors">Poderes</a></li>
+                    <li><a href="#gallery" class="nav-link hover:text-red-600 transition-colors">Galeria</a></li>
+                    <li><a href="#villains" class="nav-link hover:text-red-600 transition-colors">Vilões</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden text-red-600 text-3xl" aria-label="Menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black/95 z-40 hidden flex-col items-center justify-center">
+        <button id="closeMenu" class="absolute top-6 right-6 text-red-600 text-4xl" aria-label="Fechar Menu">×</button>
+        <ul class="flex flex-col space-y-8 text-center text-2xl">
+            <li><a href="#home" class="mobile-link hover:text-red-600 transition-colors">Início</a></li>
+            <li><a href="#about" class="mobile-link hover:text-red-600 transition-colors">Sobre</a></li>
+            <li><a href="#powers" class="mobile-link hover:text-red-600 transition-colors">Poderes</a></li>
+            <li><a href="#gallery" class="mobile-link hover:text-red-600 transition-colors">Galeria</a></li>
+            <li><a href="#villains" class="mobile-link hover:text-red-600 transition-colors">Vilões</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="web-bg"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="hero-content">
+                <div class="text-8xl mb-6 animate-bounce-slow">🕷️</div>
+                <h1 class="text-6xl md:text-8xl font-black mb-4 text-red-600 spider-title glow-text">
+                    SPIDER-MAN
+                </h1>
+                <p class="text-2xl md:text-4xl mb-8 text-blue-400 font-light">
+                    O Amigão da Vizinhança
+                </p>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-gray-300">
+                    "Com grandes poderes vêm grandes responsabilidades"
+                </p>
+                <a href="#about" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all transform hover:scale-105 shadow-lg shadow-red-600/50">
+                    Descobrir Mais
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="text-red-600 text-4xl">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-black text-center mb-16 text-red-600 spider-title">
+                SOBRE O HERÓI
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div class="spider-card bg-gray-800/50 p-8 rounded-lg border-2 border-red-600/30 hover:border-red-600 transition-all">
+                    <div class="text-6xl mb-6 text-center">🦸‍♂️</div>
+                    <h3 class="text-3xl font-bold mb-4 text-blue-400">Peter Parker</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Peter Parker era um estudante comum até ser picado por uma aranha radioativa durante uma 
+                        exposição científica. Esse evento transformou sua vida para sempre, concedendo-lhe 
+                        habilidades sobre-humanas incríveis.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Após a trágica morte de seu tio Ben, Peter aprendeu que "com grandes poderes vêm grandes 
+                        responsabilidades" e decidiu usar suas habilidades para proteger os inocentes como o 
+                        Amigão da Vizinhança de Nova York.
+                    </p>
+                </div>
+
+                <div class="spider-card bg-gray-800/50 p-8 rounded-lg border-2 border-blue-600/30 hover:border-blue-600 transition-all">
+                    <div class="text-6xl mb-6 text-center">🕸️</div>
+                    <h3 class="text-3xl font-bold mb-4 text-red-400">Origem dos Poderes</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-red-600 mr-3">▸</span>
+                            <span>Picado por uma aranha radioativa geneticamente modificada</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-600 mr-3">▸</span>
+                            <span>DNA alterado conferindo habilidades aracnídeas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-600 mr-3">▸</span>
+                            <span>Criou seus próprios lança-teias mecânicos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-600 mr-3">▸</span>
+                            <span>Costurou seu próprio traje icônico</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powers Section -->
+    <section id="powers" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-black text-center mb-16 text-red-600 spider-title">
+                PODERES E HABILIDADES
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Power Card 1 -->
+                <div class="power-card bg-gradient-to-br from-red-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-red-600/50 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">💪</div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400 text-center">Super Força</h3>
+                    <p class="text-gray-300 text-center">
+                        Capaz de levantar até 10 toneladas e lutar contra os vilões mais poderosos
+                    </p>
+                </div>
+
+                <!-- Power Card 2 -->
+                <div class="power-card bg-gradient-to-br from-blue-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-blue-600/50 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🕷️</div>
+                    <h3 class="text-2xl font-bold mb-3 text-blue-400 text-center">Sentido Aranha</h3>
+                    <p class="text-gray-300 text-center">
+                        Premonição que alerta sobre perigos iminentes antes que aconteçam
+                    </p>
+                </div>
+
+                <!-- Power Card 3 -->
+                <div class="power-card bg-gradient-to-br from-red-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-red-600/50 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🧗</div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400 text-center">Aderência</h3>
+                    <p class="text-gray-300 text-center">
+                        Pode aderir e escalar qualquer superfície, incluindo paredes e tetos
+                    </p>
+                </div>
+
+                <!-- Power Card 4 -->
+                <div class="power-card bg-gradient-to-br from-blue-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-blue-600/50 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">⚡</div>
+                    <h3 class="text-2xl font-bold mb-3 text-blue-400 text-center">Agilidade</h3>
+                    <p class="text-gray-300 text-center">
+                        Reflexos e agilidade sobre-humanos, muito além de qualquer atleta olímpico
+                    </p>
+                </div>
+
+                <!-- Power Card 5 -->
+                <div class="power-card bg-gradient-to-br from-red-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-red-600/50 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🕸️</div>
+                    <h3 class="text-2xl font-bold mb-3 text-red-400 text-center">Lança-Teias</h3>
+                    <p class="text-gray-300 text-center">
+                        Dispositivos mecânicos que disparam teias super resistentes
+                    </p>
+                </div>
+
+                <!-- Power Card 6 -->
+                <div class="power-card bg-gradient-to-br from-blue-900/30 to-gray-900/30 p-8 rounded-lg border-2 border-blue-600/50 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="text-6xl mb-4 text-center">🧠</div>
+                    <h3 class="text-2xl font-bold mb-3 text-blue-400 text-center">Intelecto</h3>
+                    <p class="text-gray-300 text-center">
+                        Gênio científico, especialista em química, física e engenharia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-black text-center mb-16 text-red-600 spider-title">
+                GALERIA MULTIVERSO
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-red-600/30 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-red-600 to-blue-600 flex items-center justify-center text-8xl">
+                        🕷️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-red-400">Tobey Maguire</h3>
+                        <p class="text-gray-400">Trilogia Clássica</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-blue-600/30 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-blue-600 to-red-600 flex items-center justify-center text-8xl">
+                        🕸️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-blue-400">Andrew Garfield</h3>
+                        <p class="text-gray-400">O Espetacular</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-red-600/30 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-red-600 to-yellow-600 flex items-center justify-center text-8xl">
+                        🦸‍♂️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-red-400">Tom Holland</h3>
+                        <p class="text-gray-400">MCU Spider-Man</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-yellow-600/30 hover:border-yellow-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-black to-red-600 flex items-center justify-center text-8xl">
+                        🕷️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-yellow-400">Miles Morales</h3>
+                        <p class="text-gray-400">Into the Spider-Verse</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-pink-600/30 hover:border-pink-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-pink-600 to-purple-600 flex items-center justify-center text-8xl">
+                        🕸️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-pink-400">Gwen Stacy</h3>
+                        <p class="text-gray-400">Spider-Gwen</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden border-2 border-blue-600/30 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="aspect-square bg-gradient-to-br from-gray-800 to-blue-600 flex items-center justify-center text-8xl">
+                        🦸‍♂️
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-blue-400">Miguel O'Hara</h3>
+                        <p class="text-gray-400">Spider-Man 2099</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Villains Section -->
+    <section id="villains" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-black text-center mb-16 text-red-600 spider-title">
+                GALERIA DE VILÕES
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="villain-card bg-gradient-to-b from-green-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-green-600/50 hover:border-green-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🦹‍♂️</div>
+                    <h3 class="text-xl font-bold text-green-400 text-center mb-2">Duende Verde</h3>
+                    <p class="text-gray-400 text-sm text-center">Norman Osborn</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-gray-700/30 to-gray-900/30 p-6 rounded-lg border-2 border-gray-600/50 hover:border-gray-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🦾</div>
+                    <h3 class="text-xl font-bold text-gray-400 text-center mb-2">Dr. Octopus</h3>
+                    <p class="text-gray-400 text-sm text-center">Otto Octavius</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-yellow-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-yellow-600/50 hover:border-yellow-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">⚡</div>
+                    <h3 class="text-xl font-bold text-yellow-400 text-center mb-2">Electro</h3>
+                    <p class="text-gray-400 text-sm text-center">Max Dillon</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-black to-gray-900/30 p-6 rounded-lg border-2 border-gray-800/50 hover:border-gray-800 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🕷️</div>
+                    <h3 class="text-xl font-bold text-gray-100 text-center mb-2">Venom</h3>
+                    <p class="text-gray-400 text-sm text-center">Eddie Brock</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-orange-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-orange-600/50 hover:border-orange-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🔥</div>
+                    <h3 class="text-xl font-bold text-orange-400 text-center mb-2">Homem-Areia</h3>
+                    <p class="text-gray-400 text-sm text-center">Flint Marko</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-blue-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-blue-600/50 hover:border-blue-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🧊</div>
+                    <h3 class="text-xl font-bold text-blue-400 text-center mb-2">Lagarto</h3>
+                    <p class="text-gray-400 text-sm text-center">Curt Connors</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-red-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-red-600/50 hover:border-red-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">👹</div>
+                    <h3 class="text-xl font-bold text-red-400 text-center mb-2">Carnificina</h3>
+                    <p class="text-gray-400 text-sm text-center">Cletus Kasady</p>
+                </div>
+
+                <div class="villain-card bg-gradient-to-b from-purple-900/30 to-gray-900/30 p-6 rounded-lg border-2 border-purple-600/50 hover:border-purple-600 transition-all transform hover:scale-105">
+                    <div class="text-5xl mb-3 text-center">🎭</div>
+                    <h3 class="text-xl font-bold text-purple-400 text-center mb-2">Mystério</h3>
+                    <p class="text-gray-400 text-sm text-center">Quentin Beck</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-red-900/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
+                <div class="stat-card">
+                    <div class="text-5xl font-black text-red-600 mb-2 counter" data-target="60">0</div>
+                    <p class="text-gray-400 text-lg">Anos de História</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-5xl font-black text-blue-600 mb-2 counter" data-target="10">0</div>
+                    <p class="text-gray-400 text-lg">Filmes</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-5xl font-black text-red-600 mb-2 counter" data-target="1000">0</div>
+                    <p class="text-gray-400 text-lg">+ Quadrinhos</p>
+                </div>
+                <div class="stat-card">
+                    <div class="text-5xl font-black text-blue-600 mb-2">∞</div>
+                    <p class="text-gray-400 text-lg">Multiversos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-red-900/50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="text-6xl mb-4">🕷️</div>
+                <h3 class="text-3xl font-bold text-red-600 mb-4 spider-title">SPIDER-MAN</h3>
+                <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+                    "Com grandes poderes vêm grandes responsabilidades"
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-3xl hover:text-red-600 transition-colors" aria-label="Facebook">📘</a>
+                    <a href="#" class="text-3xl hover:text-red-600 transition-colors" aria-label="Twitter">🐦</a>
+                    <a href="#" class="text-3xl hover:text-red-600 transition-colors" aria-label="Instagram">📷</a>
+                    <a href="#" class="text-3xl hover:text-red-600 transition-colors" aria-label="YouTube">📹</a>
+                </div>
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-500">
+                        © 2024 Spider-Man Fan Site. Todos os direitos reservados à Marvel Comics.
+                    </p>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Este é um site de fãs não oficial criado apenas para fins educacionais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>
+
